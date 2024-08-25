@@ -14,17 +14,19 @@ struct ContentView: View {
         NavigationStack {
             List(results, id: \.trackId) { item in
                 VStack(alignment: .leading) {
-                    AsyncImage(
-                        url: URL(string: "https://hws.dev/img/logo.png"),
-                        content: { image in
+                    AsyncImage(url: URL(string: "https://hws.dev/img/logo.png")) { phase in
+                        if let image = phase.image {
                             image
                                 .resizable()
                                 .scaledToFit()
-                        },
-                        placeholder: { ProgressView() }
-                    )
+                        } else if phase.error != nil {
+                            Text("Error Loading Image")
+                        } else  {
+                            ProgressView()
+                        }
+                    }
                     .frame(width: 100, height: 100)
-                    
+                    .disabled(true)
                     Text(item.trackName)
                         .font(.headline)
                     Text(item.collectionName)
