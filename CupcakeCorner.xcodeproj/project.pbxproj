@@ -14,9 +14,9 @@
 		1D3E944F2C7B3904007FAF5B /* CupcakeCornerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E944E2C7B3904007FAF5B /* CupcakeCornerTests.swift */; };
 		1D3E94592C7B3904007FAF5B /* CupcakeCornerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E94582C7B3904007FAF5B /* CupcakeCornerUITests.swift */; };
 		1D3E945B2C7B3904007FAF5B /* CupcakeCornerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E945A2C7B3904007FAF5B /* CupcakeCornerUITestsLaunchTests.swift */; };
-		1D3E94682C7B3A00007FAF5B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E94672C7B3A00007FAF5B /* Response.swift */; };
-		1D3E946A2C7B4B58007FAF5B /* DisableFormExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E94692C7B4B58007FAF5B /* DisableFormExample.swift */; };
-		1D3E946C2C7B4F5C007FAF5B /* Observable-Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E946B2C7B4F5C007FAF5B /* Observable-Codable.swift */; };
+		1D3E946E2C7B633D007FAF5B /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E946D2C7B633D007FAF5B /* Order.swift */; };
+		1D3E94702C7B64F4007FAF5B /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E946F2C7B64F4007FAF5B /* AddressView.swift */; };
+		1D3E94722C7B657E007FAF5B /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E94712C7B657E007FAF5B /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +47,9 @@
 		1D3E94542C7B3904007FAF5B /* CupcakeCornerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CupcakeCornerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D3E94582C7B3904007FAF5B /* CupcakeCornerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerUITests.swift; sourceTree = "<group>"; };
 		1D3E945A2C7B3904007FAF5B /* CupcakeCornerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		1D3E94672C7B3A00007FAF5B /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		1D3E94692C7B4B58007FAF5B /* DisableFormExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableFormExample.swift; sourceTree = "<group>"; };
-		1D3E946B2C7B4F5C007FAF5B /* Observable-Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable-Codable.swift"; sourceTree = "<group>"; };
+		1D3E946D2C7B633D007FAF5B /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		1D3E946F2C7B64F4007FAF5B /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		1D3E94712C7B657E007FAF5B /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +100,11 @@
 		1D3E943C2C7B3903007FAF5B /* CupcakeCorner */ = {
 			isa = PBXGroup;
 			children = (
+				1D3E94712C7B657E007FAF5B /* CheckoutView.swift */,
+				1D3E946F2C7B64F4007FAF5B /* AddressView.swift */,
+				1D3E946D2C7B633D007FAF5B /* Order.swift */,
 				1D3E943D2C7B3903007FAF5B /* CupcakeCornerApp.swift */,
 				1D3E943F2C7B3903007FAF5B /* ContentView.swift */,
-				1D3E946B2C7B4F5C007FAF5B /* Observable-Codable.swift */,
-				1D3E94692C7B4B58007FAF5B /* DisableFormExample.swift */,
-				1D3E94672C7B3A00007FAF5B /* Response.swift */,
 				1D3E94412C7B3903007FAF5B /* Assets.xcassets */,
 				1D3E94432C7B3903007FAF5B /* Preview Content */,
 			);
@@ -266,11 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D3E94702C7B64F4007FAF5B /* AddressView.swift in Sources */,
+				1D3E946E2C7B633D007FAF5B /* Order.swift in Sources */,
 				1D3E94402C7B3903007FAF5B /* ContentView.swift in Sources */,
-				1D3E946C2C7B4F5C007FAF5B /* Observable-Codable.swift in Sources */,
-				1D3E94682C7B3A00007FAF5B /* Response.swift in Sources */,
 				1D3E943E2C7B3903007FAF5B /* CupcakeCornerApp.swift in Sources */,
-				1D3E946A2C7B4B58007FAF5B /* DisableFormExample.swift in Sources */,
+				1D3E94722C7B657E007FAF5B /* CheckoutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
