@@ -26,7 +26,7 @@ struct ContentView: View {
                         }
                     }
                     .frame(width: 100, height: 100)
-                    .disabled(true)
+                    
                     Text(item.trackName)
                         .font(.headline)
                     Text(item.collectionName)
