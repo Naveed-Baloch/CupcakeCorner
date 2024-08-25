@@ -9,11 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var results = [Result]()
-
+    
     var body: some View {
         NavigationStack {
             List(results, id: \.trackId) { item in
                 VStack(alignment: .leading) {
+                    AsyncImage(
+                        url: URL(string: "https://hws.dev/img/logo.png"),
+                        content: { image in
+                            image
+                                .resizable()
+                                .scaledToFit()
+                        },
+                        placeholder: { ProgressView() }
+                    )
+                    .frame(width: 100, height: 100)
+                    
                     Text(item.trackName)
                         .font(.headline)
                     Text(item.collectionName)
@@ -45,7 +56,7 @@ struct ContentView: View {
         } catch {
             print("Invalid data")
         }
-            
+        
     }
 }
 
